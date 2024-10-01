@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <style>
+        
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: azure;
+            width: 50%;
+            margin: auto;
+            padding: 10%;
+        }
+        .division{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .btndiv{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            column-gap: 15px;
+        }
+        button{
+            background-color: aliceblue;
+            padding: 10px;
+            border: 1px solid rgb(148, 137, 137);
+            color: black;
+            font-weight: bold;
+        }
+        input{
+            width: 80px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="main">
+        <h1>Calculator</h1>
+        <div class="division">
+            <p>Enter Number 1 </p>
+            <input type="number" id="num1" >
+            
+        </div>
+        <p id="errormsg1"></p>
+            
+        <div class="division">
+            <p>Enter Number 2 </p>
+            <input type="number" id="num2">
+            
+        </div>
+        <p id="errormsg2"></p>
+        <div class="division">
+            <p>Result</p>
+            <input type="number" id="result">
+        </div>
+        <p id="errormsg3"></p>
+    </div>
+
+    <div class="btndiv">
+        <button onclick="calculation(1)">Addition</button>
+        <button onclick="calculation(2)">Substraction</button>
+        <button onclick="calculation(3)">Multiplication</button>
+        <button onclick="calculation(4)">Division</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
