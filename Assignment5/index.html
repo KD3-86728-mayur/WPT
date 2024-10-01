@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <style>
+       
+        hr{
+            width: 50%;
+            margin-left: 0;
+            height: 5px;
+            margin-top: 200px;
+            background-color: black;
+        }
+        .base{
+             
+           
+            z-index: 1;
+            overlay: auto;
+        }
+        #image{
+            z-index: 5;
+         
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+    <div style="position: absolute; margin-top: -160px;">
+        <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGjEERzTpJYYza2tDc600A6cUQ0aDB7350kw&s" alt="">
+    </div>
+
+   
+ 
+        
+    <div style="position: relative; margin-top: 100px;">
+        <hr>
+
+        x-axis: <input id="xaxis" type="text" value="">
+        <br>
+        y-axis: <input id="yaxis" type="text" value="">
+        <div>
+            <button class="base" id="start" onclick="startbtn()">Start</button>
+            <button  class="base" id="stop" onclick="stopbtn()">Stop</button>
+        </div>
+        
+    </div>
+   
+
+    <script src="script.js"></script>
+</body> 
+</html>
