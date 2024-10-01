@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assgnment 4</title>
+    <style>
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            gap: 40px;
+          
+        
+        }
+        #video{
+            height: 400px;
+            width: 300px;
+        }
+        td{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Registration Form</h1>
+    </center>
+    <div class="main">
+        <div>
+            <video id="video" src="video.mp4" controls autoplay loop></video>
+        </div>
+
+        <div>
+            <table>
+                <tr>
+                    <td><span>Name</span></td>
+                    <td><input type="text" placeholder="Enter Name"></td>
+                </tr>
+                <tr>
+                    <td><span>BirthDate</span></td>
+                    <td><input type="date" placeholder="dd/MM/yyyy"></td>
+                </tr>
+                <tr>
+                    <td><span>Email</span></td>
+                    <td><input type="email" placeholder="abc@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td><span>Password</span></td>
+                    <td><input type="password" placeholder="******"></td>
+                </tr>
+                <tr>
+                    <td><span>Address</span></td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <select name="state">
+                                        <option value="Maharashtra">Maharashtra</option>
+                                        <option value="Gujrat">Gujrat</option>
+                                        <option value="Goa">Goa</option>
+                                        <option value="Punjab">Punjab</option>
+                                        <option value="Himachal">Himachal</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="District">
+                                        <option value="Raigad">Raigad</option>
+                                        <option value="Ratnagiri">Ratnagiri</option>
+                                        <option value="Mumbai">Mumbai</option>
+                                        <option value="Pune">Pune</option>
+                                        <option value="Nagpur">Nagpur</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="City">
+                                        <option value="Thane">Thane</option>
+                                        <option value="kalyan">kalyan</option>
+                                        <option value="Ghatkopar">Ghatkopar</option>
+                                        <option value="Pawoi">Pawoi</option>
+                                        <option value="Andheri">Andheri</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span>State</span></td>
+                                <td><span>District</span></td>
+                                <td><span>City</span></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>Gender</span></td>
+                    <td>
+                        <input type="radio" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>Upload Photo</span></td>
+                    <td><input type="file" placeholder="Browse your Photo"></td>
+                </tr>
+                <tr>
+                    <td><span>Select your course</span></td>
+                    <td>
+                        <select name="Select Your course" aria-placeholder="Select Your course">
+                            <option value="Thane" selected>Select Course</option>
+                            <option value="kalyan">Thane</option>
+                            <option value="kalyan">kalyan</option>
+                            <option value="Ghatkopar">Ghatkopar</option>
+                            <option value="Pawoi">Pawoi</option>
+                            <option value="Andheri">Andheri</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button>Register</button>
+                    </td>
+                    <td>
+                        <button>Clear</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
